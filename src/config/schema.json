@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "YouTube Structured Transcript Extractor Settings",
+  "type": "object",
+  "properties": {
+    "concurrency": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 4,
+      "description": "How many URLs to process per batch."
+    },
+    "preferredLanguage": {
+      "type": ["string", "null"],
+      "pattern": "^[a-z]{2}(-[A-Z]{2})?$",
+      "description": "Preferred caption language (e.g., en or en-US)."
+    },
+    "outputDir": {
+      "type": "string",
+      "default": "out",
+      "description": "Path to write exported files."
+    },
+    "captionFormat": {
+      "type": "string",
+      "enum": [
+        "array",
+        "array_with_timestamps",
+        "xml",
+        "xml_with_timestamps",
+        "one_line_text"
+      ],
+      "default": "array_with_timestamps"
+    },
+    "export": {
+      "type": "string",
+      "enum": ["json", "csv", "ndjson", "all"],
+      "default": "json"
+    }
+  },
+  "required": ["outputDir", "captionFormat", "export"],
+  "additionalProperties": false
+}
