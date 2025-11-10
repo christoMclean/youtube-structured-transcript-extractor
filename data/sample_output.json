@@ -1,0 +1,22 @@
+[
+  {
+    "videoId": "abc123XYZ",
+    "videoUrl": "https://www.youtube.com/watch?v=abc123XYZ",
+    "title": "Deep Learning 101: Intro Lecture",
+    "channelId": "UC-EXAMPLE",
+    "channelName": "ML University",
+    "language": "en",
+    "hasAutoCaptions": true,
+    "captionFormat": "array_with_timestamps",
+    "captions": [
+      { "start": 0.64, "end": 3.12, "text": "[Applause]" },
+      { "start": 3.13, "end": 8.45, "text": "Welcome to Deep Learning 101. In this session we cover the basics." }
+    ],
+    "duration": 1258.4,
+    "publishedAt": "2024-09-10T14:00:00Z",
+    "thumbnailUrl": "https://i.ytimg.com/vi/abc123XYZ/hqdefault.jpg",
+    "requestedFormat": "array_with_timestamps",
+    "error": null,
+    "createdAt": "2025-11-10T17:05:22Z"
+  }
+]
